@@ -47,7 +47,7 @@
             <td><label class="i-checks m-b-none"><input type="checkbox" name="post[]"><i></i></label></td>
             <td>Cơm chóa</td>
             <td><span class="text-ellipsis">Ẩn/Hiển thị</span></td>
-            <td><span class="text-ellipsis">12.5.2021</span></td>
+            <td><span class="text-ellipsis">15.5.2021</span></td>
             <td>
               <a href="" class="active" ui-toggle-class=""><i class="fa fa-pencil-square-o text-success text-active"></i><i class="fa fa-times text-danger text"></i></a>
             </td>
