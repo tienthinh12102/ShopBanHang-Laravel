@@ -38,7 +38,7 @@
             </th>
             <th>Tên danh mục</th>
             <th>Hiển thị</th>
-            <th>Ngày thêm</th>
+            <th>Ngày thêm.</th>
             <th style="width:30px;"></th>
           </tr>
         </thead>
