@@ -28,6 +28,13 @@
       </div>
     </div>
     <div class="table-responsive">
+        <?php
+            $message = Session::get('message');
+            if($message){
+                echo '<span class="text-alert-message">',$message,'</span>';
+                Session::put('message',null);
+            }
+        ?>  
       <table class="table table-striped b-t b-light">
         <thead>
           <tr>
@@ -38,9 +45,10 @@
             </th>
             <th>Tên danh mục</th>
             <th>Hiển thị</th>
-            <th>Ngày thêm.</th>
+            <th>Ngày thêm</th>
             <th style="width:30px;"></th>
           </tr>
+
         </thead>
         <tbody>
             @foreach ($all_category_product as $key => $cate_pro)
@@ -52,10 +60,14 @@
             <td><span class="text-ellipsis">
                 <?php
                 if($cate_pro->category_status ==0){
-                    echo 'Ẩn';
+                ?>
+                <a href="{{URL::to('/unactive-category-product/'.$cate_pro->category_id)}}"><span class="fa-thumb-styling fa fa-thumbs-up"></span></a>
+                <?php
                 }
                 else{
-                    echo 'Hiển thị';
+                ?>
+                <a href="{{URL::to('/active-category-product/'.$cate_pro->category_id)}}"><span class="fa-thumb-styling fa fa-thumbs-down"></span></a>
+                <?php
                 }
                 ?>
             </span></td>
