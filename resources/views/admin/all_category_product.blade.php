@@ -4,17 +4,17 @@
 <div class="table-agile-info">
   <div class="panel panel-default">
     <div class="panel-heading">
-      Liệt kê danh mục sản phẩm
+      <b>Liệt kê danh mục sản phẩm</b>
     </div>
     <div class="row w3-res-tb">
       <div class="col-sm-5 m-b-xs">
         <select class="input-sm form-control w-sm inline v-middle">
-          <option value="0">Bulk action</option>
-          <option value="1">Delete selected</option>
-          <option value="2">Bulk edit</option>
-          <option value="3">Export</option>
+          <option value="0">Máy chơi game</option>
+          <option value="1">Tay cầm</option>
+          <option value="2">Đĩa CD</option>
+          <option value="3">Giá</option>
         </select>
-        <button class="btn btn-sm btn-default">Apply</button>                
+        <button class="btn btn-sm btn-default">OK</button>                
       </div>
       <div class="col-sm-4">
       </div>
@@ -45,7 +45,7 @@
             </th>
             <th>Tên danh mục</th>
             <th>Hiển thị</th>
-            <th>Ngày thêm</th>
+            
             <th style="width:30px;"></th>
           </tr>
 
@@ -70,10 +70,13 @@
                 <?php
                 }
                 ?>
-            </span></td>
-            <td><span class="text-ellipsis">16.5.2021</span></td>
+            </span></td>       
             <td>
-              <a href="" class="active" ui-toggle-class=""><i class="fa fa-pencil-square-o text-success text-active"></i><i class="fa fa-times text-danger text"></i></a>
+              <a href="{{URL::to('/edit-category-product/'.$cate_pro->category_id)}}" id="icon-category" class="active" ui-toggle-class="">
+                <i class="fa fa-pencil-square-o text-success text-active"></i></a>
+                <a onClick="return confirm('Bạn có chắc muốn xóa danh mục này ?')" href="{{URL::to('/delete-category-product/'.$cate_pro->category_id)}}" id="icon-category" class="active" ui-toggle-class="">
+                <i class="fa fa-times text-danger text"></i></a>
+                
             </td>
           </tr>
           @endforeach

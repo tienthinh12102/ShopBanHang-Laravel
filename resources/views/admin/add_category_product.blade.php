@@ -24,14 +24,13 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="exampleInputPassword1">Mô tả danh mục</label>
-                                    <textarea style="resize: none" rows="5" class="form-control" name="category_product_desc"  id="exampleInputPassword1" placeholder="Mô tả danh mục sản phẩm">
-                                    </textarea>
+                                    <textarea style="resize: none" rows="5" class="form-control" id="exampleInputPassword1" name="category_product_desc"></textarea>
                                 </div>
                                 <div class="form-group">
                                     <label for="exampleInputPassword1">Hiển thị</label>
                                     <select name="category_product_status" class="form-control input-lg m-bot15">
-                                        <option value="0">Ẩn</option>
-                                        <option value="1">Hiển thị</option>                                       
+                                        <option value="1">Ẩn</option>
+                                        <option value="0">Hiển thị</option>                                       
                                     </select>
                                 </div>                             
                                 <button type="submit" name="add_category_product" class="btn btn-info">Thêm danh mục</button>
