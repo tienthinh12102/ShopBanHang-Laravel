@@ -54,7 +54,7 @@ class CategoryProduct extends Controller
     }
     public function delete_category_product($category_product_id){
     	DB::table('tbl_category_product')->where('category_id',$category_product_id)->delete();
-    	Session::put('message','Xóa danh sản phẩm thành công');
+    	Session::put('message','X phẩm thành công');
     	return Redirect::to('/all-category-product');
     }
 }
