@@ -2355,7 +2355,7 @@ ul.inbox-pagination li {
 }
 /*-- gallery --*/
 .w3layouts-main h2 {
-	color: #8b5c7e;
+	color: #fdfeff;
     font-size: 29px;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -2397,7 +2397,7 @@ input.ggg{
 	text-decoration:underline;
 }
 .w3layouts-main a {
-    color: #fff;
+    color: #fde0c3;
 	transition:0.5s all;
 	-webkit-transition:0.5s all;
 	-o-transition:0.5s all;
@@ -2405,7 +2405,7 @@ input.ggg{
 	-ms-transition:0.5s all;
 }
 .w3layouts-main a:hover{
-	color:#f0bcb4;
+	color:#fdebdb;
 	transition:0.5s all;
 	-webkit-transition:0.5s all;
 	-o-transition:0.5s all;
@@ -2417,7 +2417,7 @@ input.ggg{
     font-size: 18px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    background: #f0bcb4;
+    background: #54903e;
     color: white;
     border: none;
     outline: none;
@@ -2439,7 +2439,7 @@ input.ggg{
 	-ms-transition:0.5s all;
 }
 .w3layouts-main p a {
-    color: #f0bcb4;
+    color: #fde0c3;
     padding: 10px;
 }
 .w3layouts-main p a:hover {
